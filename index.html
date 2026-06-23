@@ -879,6 +879,9 @@
       el.editingSection.classList.remove('hidden');
       el.pasteGuide.classList.remove('hidden');
       
+      el.canvasContainer.classList.remove('items-center');
+      el.canvasContainer.classList.add('items-start');
+
       state.hasImage = true;
 
       // 各3層キャンバスのサイズを設定
@@ -1723,6 +1726,10 @@
         el.editingSection.classList.add('hidden');
         el.pageNavigation.classList.add('hidden');
         el.pasteGuide.classList.add('hidden');
+        
+        el.canvasContainer.classList.remove('items-start');
+        el.canvasContainer.classList.add('items-center');
+
         resizeObserver.disconnect();
       });
 
